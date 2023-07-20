@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
-import { HomePage, PokePage } from "./pages/index.js";
+import { HomePage, PokePage, SinglePokePage } from "./pages/index.js";
 
 export default function App() {
   return (
@@ -14,6 +14,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/poke" element={<PokePage />} />
+          <Route path="/pokes/poke/:num" element={<SinglePokePage />} />
         </Routes>
       </div>
     </BrowserRouter>

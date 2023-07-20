@@ -13,7 +13,7 @@ export default function PokePage(props) {
         
       })
       .then((data)=>{
-        console.log(data[0].title);
+        console.log(data);
         
         setList(data);
       })
