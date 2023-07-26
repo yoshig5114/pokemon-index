@@ -3,8 +3,8 @@ export function filterByType(list, type){
     else return list;
 }
 
-export function filterByWeakness(list, weakness){
-    if(weakness) return list.filter((poke) => poke.weakness == weakness);
+export function filterByWeaknesses(list, weaknesses){
+    if(weaknesses) return list.filter((poke) => poke.weaknesses == weaknesses);
     else return list;
 }
 

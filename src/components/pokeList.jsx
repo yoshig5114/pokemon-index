@@ -12,7 +12,7 @@ export function PokeList(props) {
         //console.log(data[0].title);
         let newArr = [];
         for (let i = 0; i < data.length; i++) {
-          newArr.push(data[i].title);
+          newArr.push(data[i].name);
         }
         setList(newArr);
       })

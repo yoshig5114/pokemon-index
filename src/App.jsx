@@ -14,7 +14,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/poke" element={<PokePage />} />
-          <Route path="/pokes/poke/:num" element={<SinglePokePage />} />
+          <Route path="/pokes/poke/:id" element={<SinglePokePage />} />
         </Routes>
       </div>
     </BrowserRouter>
