@@ -19,7 +19,7 @@ export default function PokePage(props) {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
+        //console.log(data);
         let objToArray = data.pokemon;
         setList(objToArray);
       })
@@ -36,7 +36,7 @@ export default function PokePage(props) {
   let weaknesses = getListOf(list, "weaknesses");
   let pokeByType = filterByType(list, searchType);
   let type = getListOf(list, "type");
-
+  //console.log(type, weaknesses)
   return (
     <div>
       <h1>Pokemon By Types and Weaknesses</h1>

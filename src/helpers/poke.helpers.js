@@ -11,3 +11,8 @@ export function filterByWeaknesses(list, weaknesses){
 export function getListOf(list, prop){
     return [...new Set(list.map((poke) => poke[prop] || ""))];
 }
+
+export function handleSearch(list, searchTerm){
+    if(searchTerm) return list.filter((poke) => poke.name == searchTerm);
+  else return [list[0]];
+}

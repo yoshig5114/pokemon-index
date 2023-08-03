@@ -13,7 +13,8 @@ export default function SinglePokePage() {
         return res.json();
       })
       .then((data)=>{
-        setItem(data)
+        let objToArray = data.pokemon
+        setItem(objToArray[id-1])
       })
       .catch((err)=>{
         console.log(err.message)
@@ -27,18 +28,13 @@ export default function SinglePokePage() {
   return (
     <div>
       <div>
-        <img src={`${item.image}`} alt={`${item.name }`}/>
+        <img src={`${item.img}`} alt={`${item.name}`}/>
       </div>
       <div>
         <h1>{item.name}</h1>
         <p>
-          Info: number {item.num}. type {item.type}. weakness {item.weakness}
+          Info: number: {item.num}. type: {item.type}. weaknesses: {item.weaknesses}
         </p>
-        <p>
-         
-        </p>
-        <h2>Description</h2>
-        <p>{item.description}</p>
       </div>
     </div>
   );

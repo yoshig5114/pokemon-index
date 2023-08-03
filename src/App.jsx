@@ -9,7 +9,7 @@ export default function App() {
       <div>
         <ul>
           <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/poke">Pokemon Info</NavLink></li>
+          <li><NavLink to="/poke">Filters</NavLink></li>
         </ul>        
         <Routes>
           <Route path="/" element={<HomePage />} />
